@@ -145,7 +145,7 @@
       height: auto;
     }
 
-     .site-info {
+    .site-info {
       display: flex;
       align-items: flex-end;
       margin-top: -6px;
@@ -167,6 +167,15 @@
       color: #ddd;
       line-height: 1.6;
       max-width: 800px;
+    }
+
+    /* Article header image */
+    .article-header-img {
+      width: 33%;
+      height: auto;
+      float: left;
+      margin: 0 20px 20px 0;
+      border-radius: 12px;
     }
 
     .top-strip {
@@ -229,6 +238,13 @@
       .container {
         padding-top: 90px;
       }
+
+      /* On mobile, make the article image full width */
+      .article-header-img {
+        width: 100%;
+        float: none;
+        margin: 0 0 20px 0;
+      }
     }
   </style>
 </head>
@@ -261,18 +277,18 @@
   </nav>
 
   <!-- Main Content -->
-<div class="container">
-  <header>
-    <a href="https://cdlayer8.co.uk">
-      <img src="./assets/logoarticle1.png" alt="cd/layer8 logo" />
-    </a>
-    <div class="site-info">
-      <p class="site-subtitle">article one</p>
-    </div>
-  </header>
+  <div class="container">
+    <header>
+      <a href="https://cdlayer8.co.uk">
+        <img src="./assets/logoarticle1.png" alt="cd/layer8 logo" />
+      </a>
+      <div class="site-info">
+        <p class="site-subtitle">article one</p>
+      </div>
+    </header>
 
     <section class="content">
-      <img src="./assets/lilacfishcircle.png" alt="Article Header Image" style="max-width:100%; height:auto; margin-bottom:20px; border-radius:12px;" />
+      <img src="./assets/lilacfishcircle.png" alt="Article Header Image" class="article-header-img" />
       <h1>The Decoy Effect in Cyber Threats : A Psychological Analysis of APT Lure Design</h1>
       <p><strong>how threat actors exploit curiosity, urgency, and authority in file naming</strong></p>
       <p>write</p>

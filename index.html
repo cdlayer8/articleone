@@ -169,18 +169,19 @@
       max-width: 800px;
     }
 
-    /* Article header fix */
+    /* Article header fix: stacked with bigger image hugging left */
     .article-header {
       text-align: left;
       margin-bottom: 20px;
     }
 
     .article-header img {
-      width: 40%;
-      max-width: 300px;
+      width: 45%; /* a bit bigger */
+      max-width: 350px;
       display: block;
-      margin: 0 0 1rem 0;
-      border-radius: 16px;
+      margin-left: 0; /* ensure left alignment */
+      margin-bottom: 1rem;
+      border-radius: 12px;
     }
 
     .article-header h1 {
@@ -253,6 +254,7 @@
       .article-header img {
         width: 100%;
         max-width: none;
+        margin-left: 0;
       }
     }
   </style>

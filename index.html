@@ -169,14 +169,26 @@
       max-width: 800px;
     }
 
-    /* Article header image */
-    .article-header-img {
-      width: 33%;
-      height: auto;
-      float: left;
-      margin: 0 20px 20px 0;
-      border-radius: 12px;
-    }
+   .article-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.article-header img {
+  width: 30%;          
+  max-width: 200px;    
+  height: auto;
+  border-radius: 12px;
+}
+
+.article-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
 
     .top-strip {
       position: fixed;
@@ -239,12 +251,17 @@
         padding-top: 90px;
       }
 
-      /* On mobile, make the article image full width */
-      .article-header-img {
-        width: 100%;
-        float: none;
-        margin: 0 0 20px 0;
-      }
+      .article-header {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.article-header img {
+  width: 100%;
+  max-width: none;
+  margin-bottom: 15px;
+}
+
     }
   </style>
 </head>
@@ -288,11 +305,13 @@
     </header>
 
     <section class="content">
-      <img src="./assets/lilacfishcircle.png" alt="Article Header Image" class="article-header-img" />
+  <div class="article-header">
+      <img src="./assets/lilacfishcircle.png" alt="Article Header Image" />
       <h1>The Decoy Effect in Cyber Threats : A Psychological Analysis of APT Lure Design</h1>
-      <p><strong>how threat actors exploit curiosity, urgency, and authority in file naming</strong></p>
-      <p>write</p>
-    </section>
+    </div>
+    <p><strong>how threat actors exploit curiosity, urgency, and authority in file naming</strong></p>
+    <p>write</p>
+  </section>
   </div>
 
   <footer>
